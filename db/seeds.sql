@@ -1,0 +1,1 @@
+--write insert queries to populate 'burgers' table, atleast 3 
