@@ -12,7 +12,7 @@ CREATE TABLE burgers(
 --burger_name string
     burger_name VARCHAR(50),
 --devoured boolean
-    devoured BOOLEAN,
+    devoured BOOLEAN DEFAULT 0,
 --primary key id
     PRIMARY KEY (id)
 );

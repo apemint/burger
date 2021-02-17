@@ -20,3 +20,7 @@ h1, h2, h3{
 .col-center {
     margin:0 auto;
 }
+ul {
+    list-style: none;
+    text-align: center;
+}

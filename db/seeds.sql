@@ -3,7 +3,7 @@ INSERT INTO burgers (burger_name, devoured)
 VALUES ("Quesadilla Burger", false);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Jalapeno Burger", true);
+VALUES ("Jalapeno Burger", false);
 
 INSERT INTO burgers (burger_name, devoured)
 VALUES ("Bacon Burger", true);
