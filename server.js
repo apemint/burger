@@ -8,7 +8,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const routes = require("./controllers/burgers_controller.js");
+const routes = require("./controllers/burgers_controllers");
 
 app.use(routes);
 

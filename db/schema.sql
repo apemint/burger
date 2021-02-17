@@ -15,4 +15,4 @@ CREATE TABLE burgers(
     devoured BOOLEAN,
 --primary key id
     PRIMARY KEY (id)
-);,
+);

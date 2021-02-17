@@ -17,7 +17,7 @@ if (process.env.JAWSBD_URL) {
 
 }
 
-connection.connection(err => {
+connection.connect(err => {
     if (err) {
         console.error("error connecting" + err.stack);
         return;
