@@ -1,5 +1,5 @@
 // //import require connection.js into orm.js
-const connection = require("./connection.js");
+let connection = require("./connection.js");
 
 function printQuestionMarks(num) {
   var arr = [];
