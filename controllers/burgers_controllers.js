@@ -9,14 +9,14 @@ app.get("/", function (req, res) {
 });
 
 //get all
-app.get("/burgers", function (req, res) {
+app.get("/api/burger", function (req, res) {
     burger.all(function (data) {
         res.json({ burgers: data });
     });
 });
 
 //post
-app.post("/burgers", function (req, res) {
+app.post("/api/create", function (req, res) {
     burger.insert([
         "burger_name", "devoured"
     ], [
@@ -28,7 +28,7 @@ app.post("/burgers", function (req, res) {
 });
 
 //updates to 'devoured'
-app.put("/burgers/:id", function (req, res) {
+app.put("/api/devour/:id", function (req, res) {
     var condition = "id = " + req.params.id;
 
     burger.update({
@@ -43,7 +43,7 @@ app.put("/burgers/:id", function (req, res) {
 });
 
 //delete
-app.delete("/burgers/:id", function (req, res) {
+app.delete("/delete/:id", function (req, res) {
     var condition = "id = " + req.params.id;
 
     burger.delete(condition, function (result) {
@@ -56,5 +56,4 @@ app.delete("/burgers/:id", function (req, res) {
 });
 
 //export 
-
 module.exports = app;

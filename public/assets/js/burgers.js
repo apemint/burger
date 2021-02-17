@@ -1,7 +1,7 @@
 $(document).ready(function () {
     const burgers_elem = $("#submittedBurgers")
     const burgers_elem_two = $("#devouredBurgers")
-    $.ajax("/burgers").then(function (data) {
+    $.ajax("/api/burger").then(function (data) {
 
         let burgers = data.burgers;
 
@@ -29,7 +29,7 @@ $(document).ready(function () {
             burger_name: $("#addBurger [name=burger]").val().trim()
         };
 
-        $.ajax("/burgers", {
+        $.ajax("/api/create", {
             type: "POST",
             data: newBurger
         }).then(
@@ -53,7 +53,7 @@ $(document).ready(function () {
         };
 
         // Send the PUT request.
-        $.ajax("/burgers/" + id, {
+        $.ajax("/api/devour/" + id, {
             type: "PUT",
             data: updatedBurger
         }).then(
@@ -74,7 +74,7 @@ $(document).ready(function () {
         console.log(id);
 
         //ajax call to delete a burger
-        $.ajax("/burgers/" + id, {
+        $.ajax("/delete/" + id, {
             type: "DELETE"
         }).then(
             function () {
