@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "eat it",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -16,9 +21,5 @@
   "bugs": {
     "url": "https://github.com/apemint/burger/issues"
   },
-  "homepage": "https://github.com/apemint/burger#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mysql": "^2.18.1"
-  }
+  "homepage": "https://github.com/apemint/burger#readme"
 }

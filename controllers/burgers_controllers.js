@@ -4,9 +4,9 @@ const burger = require("../models/burger.js");
 const express = require("express");
 const app = express.Router();
 
-app.get("/", function (req, res) {
+app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "public/index.html"));
-});
+  });
 
 //get all
 app.get("/api/burger", function (req, res) {
