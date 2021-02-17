@@ -1,6 +1,6 @@
 //set up code to connect node to mysql, export the connection
 
-let sql = require("mysql");
+let mysql = require("mysql");
 
 var connection;
 
