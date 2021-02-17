@@ -1,0 +1,22 @@
+body {
+    background-color: beige;
+}
+
+h1, h2, h3{
+    text-align: center;
+    margin-top: 40px;
+    color: Black
+}
+
+.burgerImage {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    height: 100px;
+    width: auto;
+    
+}
+
+.col-center {
+    margin:0 auto;
+}
